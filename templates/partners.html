@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container" style="margin-left: 2.5rem; margin-top: -1.5rem;">
+    <div class="fix-center" style="margin-bottom: -3rem;">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Direccion</th>
+                </tr>
+            </thead>
+            {% for people in peoples.items %}
+            <tbody class="text-white">
+                <tr>
+                    <th scope="row">{{ people.id }}</th>
+                    <td>{{ people.name }}</td>
+                    <td>{{ people.dni }}</td>
+                    <td>{{ people.email }}</td>
+                    <td>{{ people.direction }}</td>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item">
+                    {% if peoples.prev_num %}
+                    <a class="page-link" href="{{ peoples.prev_num }}" tabindex="-1" aria-disabled="true">Previous</a>
+                    {% endif %}
+                </li>
+                {% for page in peoples.iter_pages() %}
+                {% if page %}
+                <li class="page-item"><a class="page-link" href="{{ url_for('listPartners', page_num=page) }}">{{ page }}</a></li>
+                {% endif %}
+                {% endfor %}
+                <li class="page-item">
+                    {% if peoples.next_num %}
+                    <a class="page-link" href="{{ peoples.next_num }}">Next</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </nav>
+</div>
+{% endblock %}

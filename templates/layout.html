@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Partner Register</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <!-- Custom Bootstrap Primary Color -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/primary-color.css') }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock content %}
+
+    <script src="{{ url_for('static', filename = 'js/jquery.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+    {% block script %}
+    {% endblock script %}
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url(primary-color.css);
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 300px;
+    background: #44A08D;
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);
+    background: linear-gradient(to right, #093637, #44A08D);
+}
+
+
+
+.center-spinner{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 495px;
+    margin-left: -3rem;
+}
+
+.center-spinner1 {
+    margin-left: -2.5rem;
+}
+
+.form-style {
+    color: white;
+}
+
+.form-styleh .label-text {
+    color: white;
+    font-weight: 400px;
+    letter-spacing: .075rem;
+    text-shadow: .1rem .1rem .5rem black!important
+}
+
+.container {
+    margin-top: 1rem;
+    padding-bottom: -2rem;
+    margin-left: -.1rem;
+}
+
+.form-group .form-message1 {
+    color: rgb(85, 7, 23)
+}
+
+.form-group svg {
+    width: 1.5rem;
+    margin-bottom: .4rem;
+    margin-right: .2rem;
+    color: white;
+}
+
+.title {
+    color: white;
+    text-shadow: .1rem .1rem .8rem black !important;
+}
+
+.align-center {
+    margin-top: 11.5rem;
+}
+
+.title-partner {
+    text-shadow: .1rem .3rem .8rem black!important;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.fix-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 601px;
+}
+
+.btn-registrar {
+    color: white;
+}
+
+.back {
+    background: none;
+}
+
+.btn-1 {
+    color: white;
+    margin-top: 2rem;
+}
+
+.btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -8.5rem;
+}
+
+.fixing {
+    margin-left: 8.5rem;
+    padding-top: 2.8rem;
+    width: 650px
+}
+
+#image-1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 5px;
+    margin-top: -10rem;
+}
+
+#image-2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 5px;
+    margin-top: -10rem;
+}
+
+#image-3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 5px;
+    margin-top: -10rem;
+}
+
+#image-4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 5px;
+    margin-top: -10rem;
+}

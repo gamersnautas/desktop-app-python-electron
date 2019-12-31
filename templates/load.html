@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Partner Register</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+</head>
+
+<body>
+    
+    <div class="center-spinner back" id="spinner">
+        <div class="spinner-border m-5 text-center text-primary" role="status"></div>
+        <span class="text-primary center-spinner1 lead" id="text">Iniciando el Programa...</span>
+    </div>
+    <div id="image-1" class="d-none">
+        <img src="../static/images/cmd.ico" style="width: 8rem;">
+    </div>
+    <div id="image-2" class="d-none">
+        <img src="../static/images/server.png" style="width: 8rem;">
+    </div>
+    <div id="image-3" class="d-none">
+        <img src="../static/images/database.png" style="width: 8rem;">
+    </div>
+    <div id="image-4" class="d-none">
+        <img src="../static/images/ok.png" style="width: 8rem;">
+    </div>
+    
+    
+
+    <script src="../static/js/jquery.slim.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script>
+        setTimeout(() => {
+            $(location).attr('href', 'http://localhost:5000/register')
+        }, 29500);
+        // Animated CSS
+        setTimeout(() => {
+            $('#image-1').toggleClass('d-none animated bounceInLeft')
+        }, 1000);
+        setTimeout(() => {
+            $('#image-1').toggleClass('animated bounceInLeft animated bounceOutRight')
+        }, 7000);
+        setTimeout(() => {
+            $('#image-1').toggleClass('animated bounceInLeft animated bounceOutRight d-none')
+        }, 7500);
+        setTimeout(() => {
+            $('#text').text('Cargando Base de datos...')
+            $('#image-2').toggleClass('d-none animated bounceInLeft')
+        }, 8000);
+        setTimeout(() => {
+            $('#image-2').toggleClass('animated bounceInLeft animated bounceOutRight')
+        }, 14000);
+        setTimeout(() => {
+            $('#image-2').toggleClass('animated bounceInLeft animated bounceOutRight d-none')
+        }, 14500);
+        setTimeout(() => {
+            $('#text').text('Configurando base de datos...')
+            $('#image-3').toggleClass('d-none animated bounceInLeft')
+        },15000);
+        setTimeout(() => {
+            $('#image-3').toggleClass('animated bounceInLeft animated bounceOutRight')
+        },19000);
+        setTimeout(() => {
+            $('#image-3').toggleClass('animated bounceInLeft animated BounceOutRight d-none')
+        },19500);
+        setTimeout(() => {
+            $('#text').text('Ya casi está listo...')
+            $('#image-4').toggleClass('d-none animated bounceInLeft')
+        },20000);
+        setTimeout(() => {
+            $('#image-4').toggleClass('animated bounceInLeft animated bounceOutRight')
+        },24000)
+        setTimeout(() => {
+            $('#image-4').toggleClass('animated bounceInLeft animated bounceOutRight d-none')
+        },24500);
+        setTimeout(() => {
+            $('#text').text('Listo')
+        },25000)
+        setTimeout(() => {
+            $('#spinner').toggleClass('animated bounceOutUp')
+        },29000)
+        
+        
+
+    </script>
+
+</body>
+
+</html>

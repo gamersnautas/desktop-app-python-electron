@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container fix-center fixing" style="margin-left: 5.2rem; margin-top: -2rem;">
+    {% if people %}
+    <div class="card text-primary" style="width: 26rem;">
+        <div class="card-body">
+          <h5 class="card-title">Nombre: {{ people.name | safe }}</h5>
+          <p class="card-text">DNI: {{ people.dni | safe }}</p>
+          <p class="card-text">Email: {{ people.email | safe }}</p>
+          <p class="card-text">Dirección: {{ people.direction | safe }}</p>
+          <a href="#" class="btn btn-primary">Editar información</a>
+        </div>
+      </div>
+    {% endif %}
+</div>
+{% endblock %}
